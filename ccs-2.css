@@ -143,6 +143,15 @@
     filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
 }
 
+.event-icon, .party-icon, .gift-icon {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
 /* Mejoras de rendimiento */
 .animated-heart svg,
 .animated-celebration svg,
