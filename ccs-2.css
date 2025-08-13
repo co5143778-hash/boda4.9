@@ -1638,3 +1638,9 @@ html, body { overflow-x: hidden; }
   .hero-left { height: 55vh !important; }
   .hero-right { height: 80vh !important; }
 }
+
+.animated-camera lord-icon {
+    width: 320px !important;
+    height: 320px !important;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.25));
+}
