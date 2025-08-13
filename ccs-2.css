@@ -1625,7 +1625,7 @@ html, body { overflow-x: hidden; }
 /* Espaciados móviles entre tarjetas y entre secciones */
 @media (max-width: 768px) {
   /* sumar 24px para despejar el marco externo (inset:-12px) de cada tarjeta */
-  .events-section .events-container { row-gap: calc(1rem + 24px) !important; }
+  .events-section .events-container { row-gap: calc(2rem + 24px) !important; }
   /* margen extra para separar el último marco de eventos del inicio de la galería */
   .events-section.section-block { margin-bottom: calc(0.75rem + 24px); }
 }
@@ -1633,5 +1633,5 @@ html, body { overflow-x: hidden; }
 /* Portada: pegar al borde superior y ampliar en móviles */
 .hero-wrapper { padding-top: 0 !important; padding-bottom: 0 !important; }
 @media (max-width: 768px) {
-  .hero-split { height: 95vh !important; }
+  .hero-split { height: 115vh !important; }
 }
