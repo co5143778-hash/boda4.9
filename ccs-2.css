@@ -1100,6 +1100,7 @@ body {
   position: absolute;
   z-index: -1;
   inset: 0;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.10), 0 3px 8px rgba(0,0,0,0.06);
 }
 
 /* Apply background colors/gradients to the pseudo-element */
