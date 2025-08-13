@@ -1633,7 +1633,7 @@ html, body { overflow-x: hidden; }
 /* Portada: pegar al borde superior y ampliar en móviles */
 .hero-wrapper { padding-top: 0 !important; padding-bottom: 0 !important; }
 @media (max-width: 768px) {
-  .hero-split { height: 95vh !important; }
-  .hero-left { height: 95vh !important; }
+  .hero-split { height: 70vh !important; }
+  .hero-left { height: 70vh !important; }
   .hero-right { height: auto !important; }
 }
