@@ -1685,32 +1685,29 @@ html, body { overflow-x: hidden; }
 
 .decorative-line {
 	position: relative;
-	height: 10px;
-	margin: 10px 0;
-	/* Patrón por tile: línea corta, 3 puntos (S-M-S), línea corta, 3 puntos (S-M-S) */
+	height: 22px;
+	margin: 16px 0;
 	background-image:
-		/* Línea corta 1 (10px→26px del tile de 160px) */
-		linear-gradient(to right, transparent 0 10px, rgba(255,255,255,1) 10px 26px, transparent 26px 160px),
-		/* Línea corta 2 (90px→106px) */
-		linear-gradient(to right, transparent 0 90px, rgba(255,255,255,1) 90px 106px, transparent 106px 160px),
-		/* Puntos S-M-S grupo 1 (50px, 60px, 70px) */
-		radial-gradient(circle at 50px 50%, rgba(255,255,255,1) 1px, rgba(255,255,255,0) 2.2px),
-		radial-gradient(circle at 60px 50%, rgba(255,255,255,1) 1.8px, rgba(255,255,255,0) 3px),
-		radial-gradient(circle at 70px 50%, rgba(255,255,255,1) 1px, rgba(255,255,255,0) 2.2px),
-		/* Puntos S-M-S grupo 2 (130px, 140px, 150px) */
-		radial-gradient(circle at 130px 50%, rgba(255,255,255,1) 1px, rgba(255,255,255,0) 2.2px),
-		radial-gradient(circle at 140px 50%, rgba(255,255,255,1) 1.8px, rgba(255,255,255,0) 3px),
-		radial-gradient(circle at 150px 50%, rgba(255,255,255,1) 1px, rgba(255,255,255,0) 2.2px);
-	/* Repetición horizontal del tile */
+		/* Líneas más largas (patrón 4x) */
+		linear-gradient(to right, transparent 0 20px, rgba(255,255,255,1) 20px 60px, transparent 60px 320px),
+		linear-gradient(to right, transparent 0 180px, rgba(255,255,255,1) 180px 220px, transparent 220px 320px),
+		/* Puntos S-M-S (grupo 1) */
+		radial-gradient(circle at 100px 50%, rgba(255,255,255,1) 2px, rgba(255,255,255,0) 6px),
+		radial-gradient(circle at 120px 50%, rgba(255,255,255,1) 3.4px, rgba(255,255,255,0) 7px),
+		radial-gradient(circle at 140px 50%, rgba(255,255,255,1) 2px, rgba(255,255,255,0) 6px),
+		/* Puntos S-M-S (grupo 2) */
+		radial-gradient(circle at 260px 50%, rgba(255,255,255,1) 2px, rgba(255,255,255,0) 6px),
+		radial-gradient(circle at 280px 50%, rgba(255,255,255,1) 3.4px, rgba(255,255,255,0) 7px),
+		radial-gradient(circle at 300px 50%, rgba(255,255,255,1) 2px, rgba(255,255,255,0) 6px);
 	background-size:
-		160px 1px,
-		160px 1px,
-		160px 10px,
-		160px 10px,
-		160px 10px,
-		160px 10px,
-		160px 10px,
-		160px 10px;
+		320px 2px,
+		320px 2px,
+		320px 22px,
+		320px 22px,
+		320px 22px,
+		320px 22px,
+		320px 22px,
+		320px 22px;
 	background-position:
 		left center,
 		left center,
@@ -1723,10 +1720,10 @@ html, body { overflow-x: hidden; }
 	background-repeat: repeat-x;
 	opacity: 0.98;
 }
-
+.countdown-section .decorative-line-top { margin-top: 8px; }
+.countdown-section .decorative-line-bottom { margin-bottom: 12px; }
 @media (max-width: 768px) {
-	.decorative-line { height: 8px; margin: 8px 0; }
+	.decorative-line { height: 16px; margin: 12px 0; }
+	.countdown-section .decorative-line-top { margin-top: 10px; }
+	.countdown-section .decorative-line-bottom { margin-bottom: 14px; }
 }
-/* Colocar solo en la sección de countdown */
-.countdown-section .decorative-line-top { margin-top: 0; }
-.countdown-section .decorative-line-bottom { margin-bottom: 0; }
