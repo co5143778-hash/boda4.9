@@ -1669,3 +1669,16 @@ html, body { overflow-x: hidden; }
 	will-change: transform, filter;
 	color: #ffffff;
 }
+
+/* Acentuar líneas y blanco en música, dress y detalles */
+.icon-music, .icon-dress, .icon-details { color: #ffffff; }
+.icon-dress .bowtie-anim g { stroke-width: 3.2; }
+.icon-music lord-icon, .icon-details lord-icon { filter: drop-shadow(0 0 10px rgba(255,255,255,0.6)); }
+
+/* Íconos más grandes en móviles */
+@media (max-width: 768px) {
+	.icon-music lord-icon,
+	.icon-details lord-icon { width: 380px !important; height: 380px !important; }
+	.icon-dress svg.bowtie-anim { width: 380px !important; height: 380px !important; }
+	.events-section .event-icon lord-icon { width: 380px !important; height: 380px !important; }
+}
