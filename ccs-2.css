@@ -1727,3 +1727,24 @@ html, body { overflow-x: hidden; }
 	.countdown-section .decorative-line-top { margin-top: 10px; }
 	.countdown-section .decorative-line-bottom { margin-bottom: 14px; }
 }
+
+.divider-line {
+	height: 12px;
+	margin: 12px 0 14px 0;
+	background-image:
+		/* trazo fino central difuminado */
+		linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 15%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.15) 85%, rgba(255,255,255,0) 100%),
+		/* puntos sutiles a ritmo constante */
+		radial-gradient(circle at 10% 50%, rgba(255,255,255,0.7) 2px, rgba(255,255,255,0) 4px),
+		radial-gradient(circle at 30% 50%, rgba(255,255,255,0.85) 2.4px, rgba(255,255,255,0) 5px),
+		radial-gradient(circle at 50% 50%, rgba(255,255,255,0.95) 3px, rgba(255,255,255,0) 6px),
+		radial-gradient(circle at 70% 50%, rgba(255,255,255,0.85) 2.4px, rgba(255,255,255,0) 5px),
+		radial-gradient(circle at 90% 50%, rgba(255,255,white,0.7) 2px, rgba(255,255,255,0) 4px);
+	background-size: 100% 2px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.95;
+}
+@media (max-width: 768px) {
+	.divider-line { height: 10px; margin: 10px 0 12px 0; }
+}
