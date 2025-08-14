@@ -1653,3 +1653,19 @@ html, body { overflow-x: hidden; }
     height: 320px !important;
     filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.25));
 }
+
+@keyframes bowtieSway {
+	0%, 100% { transform: rotate(0deg) translateY(0); }
+	25% { transform: rotate(-4deg) translateY(-2px); }
+	50% { transform: rotate(0deg) translateY(-4px); }
+	75% { transform: rotate(4deg) translateY(-2px); }
+}
+@keyframes bowtiePulse {
+	0%, 100% { filter: drop-shadow(0 0 6px rgba(255,255,255,0.25)); }
+	50% { filter: drop-shadow(0 0 14px rgba(255,255,255,0.55)); }
+}
+.bowtie-anim {
+	animation: bowtieSway 2.4s ease-in-out infinite, bowtiePulse 2.2s ease-in-out infinite;
+	will-change: transform, filter;
+	color: #ffffff;
+}
